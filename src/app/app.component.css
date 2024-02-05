@@ -1,0 +1,23 @@
+.container{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 10% auto;
+}
+app-header-layout{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.routerOutlet{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+}
+app-side-bar-layout{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
