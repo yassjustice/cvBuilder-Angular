@@ -1,1 +1,102 @@
 <h1>Editor</h1>
+<div class="editor">
+  <form action="" (submit)="onSubmit()" class="material-form">
+    <mat-form-field class="input-group" appearance="fill">
+      <mat-label for="name">Name</mat-label>
+      <input
+        matInput
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        [(ngModel)]="user.name"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="email">Email</mat-label>
+      <input
+        matInput
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Email"
+        [(ngModel)]="user.email"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="image">Image</mat-label>
+      <input
+        matInput
+        type="text"
+        name="image"
+        id="image"
+        placeholder="Image"
+        [(ngModel)]="user.image"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="desc">Description</mat-label>
+      <input
+        matInput
+        type="text"
+        name="desc"
+        id="desc"
+        placeholder="Description"
+        [(ngModel)]="user.desc"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="skills">Skills</mat-label>
+      <input
+        matInput
+        type="text"
+        name="skills"
+        id="skills"
+        placeholder="Skills"
+        [(ngModel)]="user.skills"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="experiences">Experiences</mat-label>
+      <input
+        matInput
+        type="text"
+        name="experiences"
+        id="experiences"
+        placeholder="Experiences"
+        [(ngModel)]="user.experiences"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="education">Education</mat-label>
+      <input
+        matInput
+        type="text"
+        name="education"
+        id="education"
+        placeholder="Education"
+        [(ngModel)]="user.education"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="input-group">
+      <mat-label for="address">Address</mat-label>
+      <input
+        matInput
+        type="text"
+        name="address"
+        id="address"
+        placeholder="Address"
+        [(ngModel)]="user.address"
+      />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>
