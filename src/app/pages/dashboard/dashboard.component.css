@@ -1,0 +1,74 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-button-container button {
+  background-color: #222222; 
+  border: none;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 40px;
+  height: 40px;
+}
+
+.example-button-container button:hover {
+  background-color: #444444;
+}
+
+.example-button-container button:focus {
+  outline: none;
+}
+
+.mat-icon {
+  font-size: 24px;
+}
+
+.favorite-icon, .share-icon, .user-icon{
+  background-color: #222222; 
+  border: none;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 40px;
+  height: 40px;
+}
+
+.favorite-icon:hover, .share-icon:hover, .user-icon:hover {
+  background-color: #444444;
+}
+
+.favorite-icon:focus, .share-icon:focus, .user-icon:focus {
+  outline: none;
+}
+
+.favorite-icon .mat-icon, .share-icon .mat-icon, .user-icon .mat-icon {
+  font-size: 24px;
+}
+
+mat-toolbar{
+  position: relative;
+  z-index: 5;
+}

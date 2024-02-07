@@ -1,0 +1,6 @@
+mat-sidenav-container{
+    height: calc(100vh - 64px);
+}
+.content{
+    padding: 24px;
+}

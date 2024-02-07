@@ -1,1 +1,30 @@
-<p>base-sidebar works!</p>
+<div class="sidenav-header">
+  <img
+    class="profilePic"
+    src="../../../assets/Fireflyavatar.jpg"
+    alt=""
+    [style.width]="profileSize"
+    [style.height]="profileSize"
+  />
+  <div class="header-text" [class.hide-header-text]="baseCollapsed">
+    <h2>Your Profile</h2>
+    <p>Hakimi Yassir</p>
+  </div>
+</div>
+<mat-nav-list>
+  <a
+    mat-list-item
+    *ngFor="let item of menuItems()"
+    [routerLink]="item.route"
+    routerLinkActive
+    #rla="routerLinkActive"
+    [activated]="rla.isActive"
+  >
+    <mat-icon matListItemIcon>
+      {{ item.icon }}
+    </mat-icon>
+    <span matListItemTitle *ngIf="!baseCollapsed">
+      {{ item.label }}
+    </span>
+  </a>
+</mat-nav-list>
