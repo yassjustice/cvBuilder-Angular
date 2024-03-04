@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Add Education</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Degree</mat-label>
+    <input matInput type="text" [(ngModel)]="newEducation.degree" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>School</mat-label>
+    <input matInput type="text" [(ngModel)]="newEducation.school" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Date</mat-label>
+    <input matInput type="text" [(ngModel)]="newEducation.date" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="newEducation.description"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="primary" (click)="addEducation()">Add</button>
+</div>

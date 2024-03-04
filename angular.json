@@ -90,6 +90,18 @@
             ],
             "scripts": []
           }
+        },
+        "e2e": {
+          "builder": "@puppeteer/ng-schematics:puppeteer",
+          "options": {
+            "devServerTarget": "cvBuilder:serve",
+            "testRunner": "node"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "cvBuilder:serve:production"
+            }
+          }
         }
       }
     }

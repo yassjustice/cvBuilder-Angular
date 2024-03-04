@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Add Experience</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput type="text" [(ngModel)]="newExperience.title" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Company</mat-label>
+    <input matInput type="text" [(ngModel)]="newExperience.company" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Date</mat-label>
+    <input matInput type="text" [(ngModel)]="newExperience.date" />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="newExperience.description"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button color="primary" (click)="addExperience()">Add</button>
+</div>
